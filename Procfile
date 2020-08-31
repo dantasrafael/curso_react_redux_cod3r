@@ -1,1 +1,1 @@
-web: http-server /build -p $PORT
+web: cd build && http-server -p $PORT
