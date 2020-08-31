@@ -1,1 +1,1 @@
-web: http_server -p $PORT
+web: npm run start
