@@ -41,7 +41,7 @@ export function remove(values) {
 function submit(values, method) {
     return dispatch => {
         const id = values._id ? values._id : ''
-        axios[method](`${BASE_URL}/billingCycles/${id}`, values)
+        axios[method](`${consts.API_URL}/billingCycles/${id}`, values)
             .then(() => {
                 toastr.success('Sucesso', 'Operação realizada com sucesso.')
                 dispatch(init())
